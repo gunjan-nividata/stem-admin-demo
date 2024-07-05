@@ -12,4 +12,4 @@ class Question(models.Model):
     question_type = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return f'{self.question_id}: {self.title}'
