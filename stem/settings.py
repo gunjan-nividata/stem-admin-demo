@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'questions.apps.QuestionsConfig',
     'tests.apps.TestsConfig',
     'configuration.apps.ConfigurationConfig',
+    'testView.apps.TestviewConfig',
     'question_bank.apps.QuestionBankConfig',
     'django.contrib.admin',
     'django.contrib.auth',
