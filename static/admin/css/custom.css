@@ -1,0 +1,44 @@
+
+/*.wrs_editor .wrs_button {											!* Button *!*/
+/*    border: 2px solid whitesmoke ;*/
+/*	cursor: pointer;*/
+/*	background: whitesmoke !important;*/
+/*	overflow: hidden;*/
+/*	direction: ltr;*/
+/*}*/
+
+/*!*.wrs_editor .wrs_button.wrs_disabled,*!*/
+/*!*.wrs_editor .wrs_comboButton.wrs_disabled *!*/
+/*!*.wrs_editor .wrs_button .wrs_disabled*!*/
+/*.wrs_editor .wrs_button .wrs_disabled{*/
+/*    border: 2px solid whitesmoke !important;*/
+/*    background: whitesmoke !important;*/
+/*    !*cursor: auto !important;*!*/
+/*    !*opacity: 0.5 !important; !* Add this to make it visually appear disabled *!*!*/
+/*}*/
+
+/*.wrs_editor .wrs_layoutFor3Rows .wrs_empty {*/
+/*    height: 22px;*/
+/*    width: 22px;*/
+/*    background: whitesmoke;}*/
+
+.wrs_panelContainer * {
+    border: 0;
+    background: whitesmoke;
+}
+
+.customTheme1 tbody tr:nth-child(2n-1) {
+  background: rgb(233, 246, 249);
+}
+.customTheme1 thead th {
+  background-color: rgb(165, 220, 230);
+}
+.customTheme1 tbody td, .customTheme1 thead th {
+  border: 2px solid rgb(227, 232, 234);
+}
+.customTheme2 tbody tr:nth-child(2n-1) {
+  background: rgb(255, 212, 172);
+}
+.customTheme2 thead th {
+  background-color: rgb(235, 167, 93);
+}

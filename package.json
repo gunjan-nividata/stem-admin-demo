@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@wiris/mathtype-froala3": "^7.31.1"
+  }
+}

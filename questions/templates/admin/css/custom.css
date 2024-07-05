@@ -1,0 +1,54 @@
+/* Light theme styles */
+:root {
+  --primary: #79aec8;
+  --secondary: #417690;
+  --accent: #f5dd5d;
+  --primary-fg: #fff;
+  --body-fg: #333;
+  --body-bg: #fff;
+  --header-color: #ffc;
+  --header-branding-color: var(--accent);
+  --header-bg: var(--secondary);
+  --header-link-color: var(--primary-fg);
+}
+
+body {
+  color: var(--body-fg);
+  background-color: var(--body-bg);
+}
+
+#header {
+  background: var(--header-bg);
+  color: var(--header-color);
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+  color: var(--header-branding-color);
+}
+
+a:link, a:visited {
+  color: var(--primary);
+}
+
+.module h2, .module caption, .inline-group h2 {
+  background: var(--primary);
+  color: var(--primary-fg);
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+  background: var(--primary);
+  color: var(--primary-fg);
+}
+
+/* Add more custom styles as needed */
+
+/*.wrs_editor .wrs_button .wrs_disabled .wrs_editor .wrs_comboButton .wrs_disabled  {*/
+    /*   background: whitesmoke;*/
+    /*}*/
+.wrs_editor .wrs_button {											/* Button */
+    border: 2px solid transparent;
+	cursor: pointer;
+	background: red !important;
+	overflow: hidden;
+	direction: ltr;
+}
