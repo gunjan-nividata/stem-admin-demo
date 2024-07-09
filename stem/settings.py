@@ -133,48 +133,46 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Froala Editor settings
-
-# FRAOLA_EDITOR_THIRD_PARTY = ('image_aviary', 'spell_checker', 'wiris')
-# FROALA_EDITOR_PLUGINS = ('wiris', 'char_counter', 'code_view', 'colors', 'emoticons',
-#                          'entities', 'file', 'font_family', 'font_size', 'fullscreen',
-#                          'image', 'image_manager', 'inline_style', 'line_breaker',
-#                          'link', 'lists', 'paragraph_format', 'paragraph_style',
-#                          'quick_insert', 'quote', 'save', 'table', 'url', 'video')
-#
-# FROALA_EDITOR_OPTIONS = {
-#     'toolbarButtons': ['wirisEditor', 'wirisChemistry', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript'],
-# }
-
 FROALA_EDITOR_THIRD_PARTY = ('image_aviary', 'spell_checker', 'wiris')
 FROALA_EDITOR_PLUGINS = (
     'align', 'char_counter', 'code_beautifier', 'code_view', 'colors', 'draggable',
     'embedly', 'emoticons', 'entities', 'file', 'font_family', 'font_size', 'fullscreen',
     'image', 'image_manager', 'inline_style', 'line_breaker', 'link', 'lists',
     'paragraph_format', 'paragraph_style', 'quick_insert', 'quote', 'save', 'table',
-    'url', 'video', 'wiris'
+    'url', 'video', 'wiris', 'special_characters', 'word_paste',
 )
 
 FROALA_EDITOR_OPTIONS = {
     'theme': 'gray',
+    'lineBreakerOffset': 20,
+    'imageUploadURL': 'https://restservices.oursite.org/api/File/UploadImage',
+    'tableCellStyles': {
+        'red': 'Red',
+        'blue': 'Blue',
+        'black': 'Black',
+        'boldblack': 'Black and Bold',
+        'extraboldblack': 'Extra bold and black',
+        'center-bold': 'Centered and Bold'
+    },
+    'wordAllowedStyleProps': [
+        'font-family', 'font-size', 'background', 'color', 'width', 'text-align', 'vertical-align',
+        'background-color', 'padding', 'margin', 'height', 'margin-top', 'margin-left',
+        'margin-right', 'margin-bottom', 'text-decoration', 'font-weight', 'font-style'
+    ],
     'toolbarButtons': [
         'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|',
-        'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|',
-        'wirisEditor', 'wirisChemistry', 'insertImage', 'insertTable', 'insertLink', 'insertVideo', 'insertFile',
-        'emoticons', '-','paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|',
-        'print', 'help', 'html', '|', 'undo', 'redo'
+        'fontFamily', 'fontSize', 'colors', 'inlineStyle', 'paragraphStyle', '|',
+        'wirisEditor', 'wirisChemistry', 'insertImage', 'insertTable', '-', 'insertLink', 'insertVideo', 'insertFile',
+        'emoticons', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '-',  'quote',
+        'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|',
+        'print', 'help', 'html', '|', 'undo', 'redo', '|'
     ],
-    'pluginsEnabled': [
-        'align', 'char_counter', 'code_beautifier', 'code_view', 'colors', 'draggable',
-        'embedly', 'emoticons', 'entities', 'file', 'font_family', 'font_size', 'fullscreen',
-        'image', 'image_manager', 'inline_style', 'line_breaker', 'link', 'lists',
-        'paragraph_format', 'paragraph_style', 'quick_insert', 'quote', 'save', 'table',
-        'url', 'video', 'wiris'
-    ],
+    'word_paste': True,
     'htmlAllowedTags': ['.*'],  # Allow all HTML tags
     'htmlAllowedAttrs': ['.*'],  # Allow all HTML attributes
-    # 'wirisEditor': {
-    #     'lib': '/static/froala_plugins/generic_wiris',
-    #     'enabled': True
-    # }
+    'tableStyles': {
+        'customTheme1': 'Custom Theme 1',
+        'customTheme2': 'Custom Theme 2'
+    }
 }
 
