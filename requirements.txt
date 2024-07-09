@@ -1,3 +1,5 @@
 Django==4.2.13
 django-froala-editor
+django-environ==0.4.5
 pillow==10.4.0
+gunicorn==20.0.4
