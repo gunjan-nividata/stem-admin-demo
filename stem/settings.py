@@ -177,6 +177,3 @@ FROALA_EDITOR_OPTIONS = {
         'customTheme2': 'Custom Theme 2'
     }
 }
-
-STATIC_URL = '/static/'
-STATIC_ROOT = str(BASE_DIR / "staticfiles")
