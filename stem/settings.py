@@ -178,3 +178,5 @@ FROALA_EDITOR_OPTIONS = {
     }
 }
 
+STATIC_URL = '/static/'
+STATIC_ROOT = str(BASE_DIR / "staticfiles")

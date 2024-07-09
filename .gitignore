@@ -2,6 +2,7 @@
 db.sqlite3
 .DS_Store
 .idea/
-/f2env
-/node_modules
+f2env/
+node_modules/
 .env
+staticfiles/
